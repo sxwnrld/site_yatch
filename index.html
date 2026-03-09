@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location de Yachts de Luxe</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: system-ui,sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f6f8fb;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    header {
+      background: #fff;
+      padding: 1rem 0;
+      border-bottom: 1px solid #e6ebf2;
+    }
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #333;
+    }
+    .hero {
+      background: #0a2238;
+      color: #fff;
+      padding: 4rem 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      color: #d7e5f4;
+    }
+    .btn {
+      display: inline-block;
+      padding: .8rem 1.5rem;
+      background: #173a62;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 999px;
+      margin: 0 .5rem;
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,.3);
+    }
+    section {
+      padding: 3rem 0;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,.05);
+    }
+    .type-card {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      height: 200px;
+    }
+    .type-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .type-card h3 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,.6);
+      color: #fff;
+      padding: .5rem 1rem;
+    }
+    footer {
+      background: #fbfcfe;
+      padding: 2rem 0;
+      text-align: center;
+      border-top: 1px solid #e6ebf2;
+      color: #6b788b;
+    }
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      margin: 2rem 0;
+    }
+    .stat-item {
+      text-align: center;
+    }
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #173a62;
+    }
+    .featured {
+      background: #fff;
+      border-radius: 16px;
+      padding: 2rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">Seacraft Lux</div>
+      <nav><a href="#yachts">Yachts</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
+    </div>
+  </header>
+
+  <section class="hero" id="yachts">
+    <div class="container">
+      <h1>Location de Yachts de Luxe</h1>
+      <p>Itinéraires sur mesure, équipages professionnels et service d'exception pour des moments inoubliables.</p>
+      <div><a href="#contact" class="btn">Réserver maintenant</a><a href="#services" class="btn btn-outline">En savoir plus</a></div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="stats">
+      <div class="stat-item">
+        <div class="stat-number">100+</div>
+        <div>Yachts disponibles</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">300+</div>
+        <div>Destinations</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">15+</div>
+        <div>Années d'expérience</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="container" id="services">
+    <h2 class="section-title">Nos Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Yachts d'exception</h3>
+        <p>Flotte triée, équipements haut de gamme.</p>
+      </div>
+      <div class="card">
+        <h3>Équipages pros</h3>
+        <p>Skippers expérimentés, service attentif.</p>
+      </div>
+      <div class="card">
+        <h3>Conciergerie</h3>
+        <p>Chefs privés, événements, transferts.</p>
+      </div>
+      <div class="card">
+        <h3>Sécurité & confort</h3>
+        <p>Normes strictes, maintenance régulière.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container featured">
+    <h2>Yacht de la semaine</h2>
+    <p>Découvrez notre yacht phare "Ocean Dream" avec équipage complet et services premium inclus</p>
+    <a href="#contact" class="btn" style="margin-top:1rem">Découvrir</a>
+  </div>
+
+  <section class="container">
+    <h2 class="section-title">Types de Yachts</h2>
+    <div class="grid">
+      <div class="type-card">
+        <img src="https://via.placeholder.com/400x300" alt="Yacht à moteur">
+        <h3>Yachts à Moteur</h3>
+      </div>
+      <div class="type-card">
+        <img src="https://via.placeholder.com/400x300" alt="Yacht à voile">
+        <h3>Yachts à Voile</h3>
+      </div>
+      <div class="type-card">
+        <img src="https://via.placeholder.com/400x300" alt="Yacht sportif">
+        <h3>Yachts Sportifs</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="background:#0d131b;color:#fff">
+    <div class="container">
+      <h2 class="section-title">Réserver votre yacht</h2>
+      <p style="text-align:center;margin-bottom:2rem">Dites-nous vos dates, votre destination et le type de yacht souhaité.</p>
+      <form style="max-width:500px;margin:0 auto">
+        <input type="text" placeholder="Nom complet" style="width:100%;padding:.8rem;margin-bottom:1rem;border-radius:8px;border:none">
+        <input type="email" placeholder="Email" style="width:100%;padding:.8rem;margin-bottom:1rem;border-radius:8px;border:none">
+        <input type="date" style="width:100%;padding:.8rem;margin-bottom:1rem;border-radius:8px;border:none">
+        <textarea placeholder="Message" rows="4" style="width:100%;padding:.8rem;margin-bottom:1rem;border-radius:8px;border:none"></textarea>
+        <button type="submit" class="btn" style="border:none;cursor:pointer

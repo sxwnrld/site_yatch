@@ -1,0 +1,22 @@
+{
+  "name": "seacraft-lux",
+  "version": "1.0.0",
+  "description": "Site de location de yachts de luxe",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000",
+    "dev": "live-server --port=3000"
+  },
+  "keywords": [
+    "yacht",
+    "location",
+    "luxe",
+    "vacances"
+  ],
+  "author": "Seacraft Lux",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "type": "commonjs"
+}
